@@ -4,6 +4,7 @@ Predicting hospital churn before it happens, for a healthcare SaaS provider oper
 Developed a Power BI customer retention solution that assessed 2,319 healthcare facilities using a rule-based customer health score, identifying churn patterns, revenue at risk, product adoption gaps and intervention priorities to support data-driven Customer Success decision-making.
 
 ## Dashboard Preview
+![Dashboard Walkthrough](dashboard_demo.gif)
 ## Introduction
 Helium Health provides SaaS platform infrastructure to hospitals and clinics across Nigeria, including hundreds of public and private facilities across Lagos State — from large teaching hospitals to small primary health centres. This project analyses facility-level subscription and engagement data to help the business understand which customers are healthy, which are quietly disengaging, and where churn is concentrated: before a facility cancels rather than after.
 
