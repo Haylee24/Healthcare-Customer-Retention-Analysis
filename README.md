@@ -84,7 +84,7 @@ CALCULATE(SUM(Facilities_Data[Monthly Subscription Fee (NGN)]),
 Facilities_Data[Customer Status] = "Active", Facilities_Data[Health Category] = "Critical")
 ```
 ## Dashboard & Visuals
-The report is structured as a four-page decision funnel — from headline exposure, to diagnosis, to root cause, to action. Every visual is titled as the question it answers, not the mechanic behind it:
+The report is structured as a four-page decision funnel: from headline exposure, to diagnosis, to root cause, to action. Every visual is titled as the question it answers, not the mechanic behind it:
 ### Page 1 - Executive Overview
 ![First Page](executive_overview_page2.png)
 
