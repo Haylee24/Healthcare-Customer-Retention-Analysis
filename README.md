@@ -97,20 +97,39 @@ KPI cards (Total Facilities, Active Facilities, Churn Rate, Revenue at Risk, Avg
 - How Many Healthy-Looking Accounts Are Actually in Trouble? — Active + Critical facility count and MRR callouts.
 
 ### Page 3 - Where Risk Concentrates
-![Third Page](risk_concentration.png)
+![Third Page](risk_concentration_page.png)
 - Are Smaller Facilities Harder to Retain? — churn rate by facility level.
 - Do Public or Private Facilities Churn More? — churn rate by ownership type.
 - Where in Lagos Is Churn Concentrated? — churn rate by LGA.
 - What Actually Drives a Facility to Churn? — Key Influencers AI visual.
 
 ### Page 4 - Customer Success Action Centre
-![Fourth page](action_callpage.png)
+![Fourth page](action_call_page.png)
 - How Many Facilities Need Attention Right Now — and What's at Stake? — triage cards by Intervention Priority tier, with count and MRR each.
 - Who Gets the Call This Week? — filtered, sortable outreach table.
 - What Do At-Risk Facilities Have in Common? — decomposition tree of Active + Critical facilities by level, ownership, and plan.
 
+## Insights & Findings
+- 81.2% of facilities are Active; the remaining 18.8% (437 facilities) have already churned.
+- 26.4% churn rate on month-to-month plans, vs. 18.2% on one-year and just 7.4% on two-year plans — contract length is the single strongest churn lever.
+- 20.5% of Primary-level facilities churn, vs. 15.4% of Secondary and 0% of Tertiary — smaller facilities are consistently harder to retain.
+- 169 facilities are Active but already Critical, representing ₦17,457,000 in monthly recurring revenue — currently invisible to a churn-rate-only view.
+- Ownership type (public vs. private) shows almost no difference in churn (18.5% vs. 18.9%), ruling out procurement structure as a meaningful driver.
 
+## Recommendations
+- Route the 169 Active + Critical facilities (₦17.5M MRR) to Customer Success immediately — they are still paying, which is the window to intervene.
+- Incentivize migration off month-to-month plans, where churn runs roughly 3.5x higher than on two-year contracts.
+- Build a lighter-touch onboarding path for Primary facilities, where smaller teams and lower feature adoption track with higher churn.
+- Use the Days-Since-Login + Feature-Adoption scatter as a recurring weekly check to catch disengagement before the health score fully collapses.
 
+## Tools 
+Power BI · DAX · Power Query · Excel
+
+# Conclusion
+
+This project delivered a proactive, revenue-weighted view of hospital churn risk for a healthcare SaaS provider — shifting the Customer Success workflow from reacting to churn after it happens, to flagging at-risk facilities while there is still time to intervene. The four-page dashboard gives stakeholders a segmented view of exposure and Customer Success a literal, ranked outreach list rather than a static report.
+
+Future work could include building an actual predictive churn model (logistic regression or similar) using this same feature set, and layering in real usage-log timestamps rather than snapshot metrics for continuous monitoring.
 
 
 
