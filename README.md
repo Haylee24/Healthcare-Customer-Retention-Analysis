@@ -86,7 +86,28 @@ Facilities_Data[Customer Status] = "Active", Facilities_Data[Health Category] = 
 ## Dashboard & Visuals
 The report is structured as a four-page decision funnel — from headline exposure, to diagnosis, to root cause, to action. Every visual is titled as the question it answers, not the mechanic behind it:
 ### Page 1 - Executive Overview
+![First Page](executive_overview_page2.png)
 
+KPI cards (Total Facilities, Active Facilities, Churn Rate, Revenue at Risk, Avg Health Score), health category breakdown, churn by subscription plan.
+
+### Page 2 - Early-warning Diagnostics
+![Second Page](diagnostics_page.png)
+- Which Active Facilities Are Quietly Disengaging? — scatter of Days Since Last Login vs. Feature Adoption (%), sized by revenue, filtered to active facilities only.
+- Who Should Customer Success Call First? — Health-Score-ranked table with heat-map formatting.
+- How Many Healthy-Looking Accounts Are Actually in Trouble? — Active + Critical facility count and MRR callouts.
+
+### Page 3 - Where Risk Concentrates
+![Third Page](risk_concentration.png)
+- Are Smaller Facilities Harder to Retain? — churn rate by facility level.
+- Do Public or Private Facilities Churn More? — churn rate by ownership type.
+- Where in Lagos Is Churn Concentrated? — churn rate by LGA.
+- What Actually Drives a Facility to Churn? — Key Influencers AI visual.
+
+### Page 4 - Customer Success Action Centre
+![Fourth page](action_callpage.png)
+- How Many Facilities Need Attention Right Now — and What's at Stake? — triage cards by Intervention Priority tier, with count and MRR each.
+- Who Gets the Call This Week? — filtered, sortable outreach table.
+- What Do At-Risk Facilities Have in Common? — decomposition tree of Active + Critical facilities by level, ownership, and plan.
 
 
 
