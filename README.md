@@ -44,42 +44,46 @@ The model uses a single fact table (Facility Data) at the facility grain, with n
 
 ## Analysis & Measures
 Key DAX Measures built for this project: 
-``` Total Facilities = 
-COUNTROWS('Facility Data') ```
 
-``` Active Facilities = 
-CALCULATE(COUNTROWS('Facility Data'), 'Facility Data'[Customer Status] = "Active") ```
+### 1. Total Facilities  
+```sql
+DISTINCTCOUNT(Facilities_Data[Facility ID])
+```
 
-``` Churn Rate = 
-DIVIDE(
-    CALCULATE(COUNTROWS('Facility Data'), 'Facility Data'[Customer Status] = "Churned"),
-    COUNTROWS('Facility Data') 
-) ```
+### 2. Active Facilities 
+```sql
+CALCULATE([Total Facilities], Facilities_Data[Customer Status] = "Active")
+```
 
-``` Total Monthly Revenue = 
-SUM('Facility Data'[Monthly Subscription Fee (NGN)]) ```
+### 3. Churn Rate
+```sql 
+DIVIDE([Churned Facilities],[Total Facilities], 0) 
+```
 
-``` Revenue at Risk = 
-CALCULATE(
-    SUM('Facility Data'[Monthly Subscription Fee (NGN)]),
-    'Facility Data'[Customer Status] = "Active",
-    'Facility Data'[Health Category] IN {"At Risk", "Critical"}
-) ```
+### 4. Total Monthly Revenue
+```sql
+SUM(Facilities_Data[Total Revenue to Date (NGN)])
+```
 
-``` Active Critical Facilities = 
-CALCULATE(
-    DISTINCTCOUNT('Facility Data'[Facility ID]),
-    'Facility Data'[Customer Status] = "Active",
-    'Facility Data'[Health Category] = "Critical"
-) ```
+### 5. Revenue at Risk 
+```sql
+CALCULATE([Total Monthly Revenue], Facilities_Data[Health Category] IN {"At Risk", "Critical"}) 
+```
 
-``` Active Critical MRR = 
-CALCULATE(
-    SUM('Facility Data'[Monthly Subscription Fee (NGN)]),
-    'Facility Data'[Customer Status] = "Active",
-    'Facility Data'[Health Category] = "Critical"
-) ```
+### 6. Active Critical Facilities
+```sql
+CALCULATE(DISTINCTCOUNT(Facilities_Data[Facility ID]), 
+Facilities_Data[Customer Status] = "Active", 
+Facilities_Data[Health Category] = "Critical")
+```
 
+### 7. Active Critical MRR 
+```sql
+CALCULATE(SUM(Facilities_Data[Monthly Subscription Fee (NGN)]), 
+Facilities_Data[Customer Status] = "Active", Facilities_Data[Health Category] = "Critical")
+```
+## Dashboard & Visuals
+The report is structured as a four-page decision funnel — from headline exposure, to diagnosis, to root cause, to action. Every visual is titled as the question it answers, not the mechanic behind it:
 
 
 
