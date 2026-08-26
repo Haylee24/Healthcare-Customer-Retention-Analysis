@@ -6,14 +6,14 @@ Developed a Power BI customer retention solution that assessed 2,319 healthcare 
 ## Dashboard Preview
 ![Dashboard Walkthrough](dashboard_demo.gif)
 ## Introduction
-Helium Health provides SaaS platform infrastructure to hospitals and clinics across Nigeria, including hundreds of public and private facilities across Lagos State — from large teaching hospitals to small primary health centres. This project analyses facility-level subscription and engagement data to help the business understand which customers are healthy, which are quietly disengaging, and where churn is concentrated: before a facility cancels rather than after. 
+Primera Health provides SaaS platform infrastructure to hospitals and clinics across Nigeria, including hundreds of public and private facilities across Lagos State — from large teaching hospitals to small primary health centres. This project analyses facility-level subscription and engagement data to help the business understand which customers are healthy, which are quietly disengaging, and where churn is concentrated: before a facility cancels rather than after. 
 
 ## Problem Statement
-Helium Health's Customer Success team had no reliable way to tell which subscribed hospitals were at risk of churning until after they had already stopped using the platform. Churn was only visible in hindsight, once revenue had already been lost. 
+Primera Health's Customer Success team had no reliable way to tell which subscribed hospitals were at risk of churning until after they had already stopped using the platform. Churn was only visible in hindsight, once revenue had already been lost. 
 
 This project answers:
 
-"How can Helium Health identify hospitals that are at risk of churning before they stop using the platform?"
+"How can Primera Health identify hospitals that are at risk of churning before they stop using the platform?"
 
 Specifically, it aims to answer:
 
@@ -22,7 +22,7 @@ Specifically, it aims to answer:
 - How much revenue is currently exposed, and where should outreach be prioritized? 
 
 ## Data Sourcing 
-- Base structure: This project uses a publicly available IBM Telco Customer Churn sample dataset, that has been adapted into a simulated healthcare SaaS context for analytical and portfolio purposes. The healthcare-specific variables and business scenario are synthetic and do not represent actual Helium Health data.
+- Base structure: This project uses a publicly available IBM Telco Customer Churn sample dataset, that has been adapted into a simulated healthcare SaaS context for analytical and portfolio purposes. The healthcare-specific variables and business scenario are synthetic and do not represent actual Primera Health data.
 - Facility counts: sourced from the Lagos State Ministry of Health (2025, secondary facility count) and a peer-reviewed HEFAMAA-derived facility count study (Adeloye et al., Journal of Multidisciplinary Healthcare, 2023), cross-checked against a third independent source.
 - Records: 2,319 facilities, reflecting Lagos State's actual public/private and tertiary/secondary/primary facility mix; not an arbitrary row count.
 - Key fields: Facility ID, LGA, Ownership Type, Facility Level, Subscription Plan, Monthly Subscription Fee, Total Staff Licensed, Active Doctors/Nurses/Other Staff, Feature Adoption (%), Days Since Last Login, Customer Health Score, Health Category, Customer Status, Churn Reason, Customer Lifetime Value.
