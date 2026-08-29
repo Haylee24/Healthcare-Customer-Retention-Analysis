@@ -127,7 +127,7 @@ Power BI · DAX · Power Query · Excel
 
 # Conclusion
 
-This project delivered a proactive, revenue-weighted view of hospital churn risk for a healthcare SaaS provider — shifting the Customer Success workflow from reacting to churn after it happens, to flagging at-risk facilities while there is still time to intervene. The four-page dashboard gives stakeholders a segmented view of exposure and Customer Success a literal, ranked outreach list rather than a static report.
+This project delivered a proactive, revenue-weighted view of hospital churn risk for a healthcare SaaS provider, shifting the Customer Success workflow from reacting to churn after it happens, to flagging at-risk facilities while there is still time to intervene. The four-page dashboard gives stakeholders a segmented view of exposure and Customer Success a literal, ranked outreach list rather than a static report.
 
 Future work could explore whether stated churn reasons corroborate the statistically identified churn drivers: for example, testing whether facilities that cited cost-related reasons (price increases, budget constraints) disproportionately fall within the subscription plans already flagged as high-risk. This was considered during the build but set aside, since Churn Reason is only available for already-churned facilities and cannot be used to diagnose currently active ones without risking overstated conclusions from a self-reported, historical field.
 
