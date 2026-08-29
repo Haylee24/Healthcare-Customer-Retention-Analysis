@@ -1,5 +1,5 @@
 # Healthcare-Customer-Retention-Analysis
-Predicting hospital churn before it happens, for a healthcare SaaS provider operating in Lagos State, Nigeria.
+Predicting hospital churn before it happens, for a fictional healthcare SaaS provider operating in Lagos State, Nigeria - it is a self-directed project.
 
 Developed a Power BI customer retention solution that assessed 2,319 healthcare facilities using a rule-based customer health score, identifying churn patterns, revenue at risk, product adoption gaps and intervention priorities to support data-driven Customer Success decision-making.
 
