@@ -4,9 +4,9 @@ Predicting hospital churn before it happens, for a fictional healthcare SaaS pro
 Developed a Power BI customer retention solution that assessed 2,319 healthcare facilities using a rule-based customer health score, identifying churn patterns, revenue at risk, product adoption gaps and intervention priorities to support data-driven Customer Success decision-making.
 
 ## Dashboard Preview
-!
+![Dashboard walkthrough](dashboard_demo.gif)
 ## Introduction
-Primera Health provides SaaS platform infrastructure to hospitals and clinics across Nigeria, including hundreds of public and private facilities across Lagos State — from large teaching hospitals to small primary health centres. This project analyses facility-level subscription and engagement data to help the business understand which customers are healthy, which are quietly disengaging, and where churn is concentrated: before a facility cancels rather than after. 
+Primera Health provides SaaS platform infrastructure to hospitals and clinics across Nigeria, including hundreds of public and private facilities across Lagos State: from large teaching hospitals to small primary health centres. This project analyses facility-level subscription and engagement data to help the business understand which customers are healthy, which are quietly disengaging, and where churn is concentrated; before a facility cancels rather than after. 
 
 ## Problem Statement
 Primera Health's Customer Success team had no reliable way to tell which subscribed hospitals were at risk of churning until after they had already stopped using the platform. Churn was only visible in hindsight, once revenue had already been lost. 
@@ -86,25 +86,25 @@ Facilities_Data[Customer Status] = "Active", Facilities_Data[Health Category] = 
 ## Dashboard & Visuals
 The report is structured as a four-page decision funnel; from headline exposure, to diagnosis, to root cause, to action. Every visual is titled as the question it answers, not the mechanic behind it:
 ### Page 1 - Executive Overview
-!
+![First page](overview_page.png)
 
 KPI cards (Total Facilities, Active Facilities, Churn Rate, Revenue at Risk, Avg Health Score), health category breakdown, churn by subscription plan.
 
 ### Page 2 - Early-warning Diagnostics
-!
-- Which Active Facilities Are Quietly Disengaging? Scatter plot showing Days Since Last Login vs. Feature Adoption (%), sized by revenue, filtered to active facilities only.
-- Who Should Customer Success Call First? Health-Score-ranked table with heat-map formatting.
-- How Many Healthy-Looking Accounts Are Actually in Trouble? Active + Critical facility count and MRR callouts.
+![Second page](churn_riskanalysis_page.png)
+- Scatter plot showing Days Since Last Login vs. Feature Adoption (%), sized by revenue, filtered to active facilities only.
+- Health-Score-ranked table with heat-map formatting.
+- Active + Critical facility count and Monthly Recurring Revenue callouts.
 
 ### Page 3 - Where Risk Concentrates
-!
+![Third Page](riskconcentration_page.png)
 - Are Smaller Facilities Harder to Retain? We looked at churn rate by facility level.
 - Do Public or Private Facilities Churn More? We looked at churn rate by ownership type.
 - Where in Lagos Is Churn Concentrated? Top 10 LGAs with the highest churn rate.
-- What Actually Drives a Facility to Churn? Key Influencers AI visual.
+- Also looked at Key drivers of facility churn.
 
 ### Page 4 - Customer Success Action Centre
-!
+![Fourth page](actioncall_page.png)
 - How Many Facilities Need Attention Right Now and What's at Stake? Using triage cards by Intervention Priority tier, with count and MRR each.
 - Who Gets the Call This Week? Filtered, sortable outreach table.
 - What Do At-Risk Facilities Have in Common? Decomposition tree showing Active + Critical facilities by level, ownership, and plan.
